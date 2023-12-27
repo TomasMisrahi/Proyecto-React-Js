@@ -10,6 +10,7 @@ const App = () => {
       <Navbar/>
       <Button>Agregar</Button>
       <ItemListContainer greeting={"Bienvenido a mi Ecommerce"}/>
+      <p className='titulo'>Tienda electronica</p>
     </div>
   )
 }

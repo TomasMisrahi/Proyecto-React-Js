@@ -2,6 +2,11 @@
   margin: 40px;
 }
 
+.titulo{
+color: blue;
+font-size: 30px;
+font-weight: bold;
+}
 .header{
 background-color: #113946;
 color: #113946;
