@@ -1,8 +1,13 @@
-# React + Vite
+## React + Vite = Mi Proyecto en ReactJs
+###### Me llamo Tomas Misrahi y este proyecto va a ser el cierre de mi capacitación como Desarrollador Front-end. A lo largo del curso de React estuve desarrollado un eCommerce utilizando las siguientes tecnologías:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- ###### React + Vite
+- ###### Chakra UI
+- ###### Firebase
 
-Currently, two official plugins are available:
+###### A su vez también utilizamos React Router DOM para establecer las rutas.
+##### El eCommerce simula un local de indumentaria, y como comentario técnico lo que se hizo por detras fue conectarme a una base de datos y obtener una determinada cantidad de productos para que el usuario pueda ver e ingresar a los detalles de los mismos, modificar la cantidad que vaya a comprar y agregarlo a un carrito que, al finalizar le solicite los datos un formulario para que esos últimos queden impactados en la base de datos y se reciba un tracked ID.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### _Tomas Misrahi_
+
+##### [Perfil de Linkedin](https://www.linkedin.com/in/tomas-misrahi/)
