@@ -1,6 +1,6 @@
 import React from 'react'
 import CartWidget from './CartWidget'
-import { Flex, Spacer, Box, Menu, MenuButton, MenuList, MenuItem} from '@chakra-ui/react'
+import { Flex, Spacer, Box, Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
 
 const Navbar = () => {
     return (
@@ -10,8 +10,6 @@ const Navbar = () => {
                     My Ecommerce
                 </Box>
                 <Spacer />
-
-
 
                 <Menu>
                     <MenuButton>

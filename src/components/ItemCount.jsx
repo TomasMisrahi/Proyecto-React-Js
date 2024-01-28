@@ -1,42 +1,53 @@
 import { useState } from 'react'
-import { AddIcon } from '@chakra-ui/icons'
+import { Button } from '@chakra-ui/react'
+//import { AddIcon } from '@chakra-ui/icons'
 
 const ItemCount = () => {
 
     const [contador, setContador] = useState(0)
 
-    const sumar = () => {
+    const mostrarMensaje = () => {
+        alert (`Agregador al carrito ${contador} uniadaes`)
+    }
 
-        if (contador === 0) {
+    const sumar = () => {
+        if (contador < 10) {
             setContador(contador + 1)
         }
+    }
 
+    const restar = () => {
+        if (contador > 0) {
+            setContador(contador - 1)
+        }
     }
 
     return (
         <div>
 
-            <h2>Contador</h2>
-            <h3>{contador}</h3>
-
-      
-            <button onClick={() => setContador(contador - 1)}>-</button>
-            <button onClick={sumar}>+</button>
+            <Button colorScheme='teal' size='xs' onClick={sumar}>
+                +
+            </Button>
+            <Button onClick={mostrarMensaje}>
+                Agragar al carrito {contador}
+            </Button>
+            <Button colorScheme='teal' size='xs' onClick={restar}>
+                +
+            </Button>
 
         </div>
     )
 }
 
 
-const iconoSumar = () => {
-  return (
-    <div>
-        <AddIcon/>
-    </div>
-  )
-}
+//const iconoSumar = () => {
+//    return (
+//        <div>
+//            <AddIcon />
+//        </div>
+//    )
+//}
 
-export default iconoSumar
+//export default iconoSumar
 
-
-//export default ItemCount
+export default ItemCount
