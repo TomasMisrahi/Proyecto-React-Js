@@ -1,16 +1,14 @@
 import React from 'react'
-import { Card, CardBody, Image, Stack, Heading, Text, Divider, CardFooter, ButtonGroup } from '@chakra-ui/react'
-import airForceBW from '../assets/img/nike-air-force-bw.png'
-import ItemCount from './ItemCount.jsx'
+import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, ButtonGroup, } from '@chakra-ui/react' 
+import ItemCount from './ItemCount'
+
+
+//<Image src={airForceBW} borderRadius='lg'/>   
 
 const Item = () => {
     return (
         <Card maxW='sm'>
-            <CardBody>
-                <Image
-                    src={airForceBW}
-                    borderRadius='lg'
-                />
+            <CardBody>             
                 <Stack mt='6' spacing='3'>
                     <Heading size='md'>Living room Sofa</Heading>
                     <Text>
