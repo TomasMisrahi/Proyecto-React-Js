@@ -1,34 +1,29 @@
 import React from 'react'
-import { Card, CardBody, Stack, Heading, Text, Divider, CardFooter, ButtonGroup, } from '@chakra-ui/react' 
-import ItemCount from './ItemCount'
+import { Card, CardBody, Stack, Heading, Divider, CardFooter, ButtonGroup, Button } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 
-//<Image src={airForceBW} borderRadius='lg'/>   
-
-const Item = () => {
+const Item = ({ titulo, id }) => {
     return (
-        <Card maxW='sm'>
-            <CardBody>             
+        <Card maxW='sm' margin='80px' alignItems="center" boxShadow='0px 0px 10px 0px'>
+            <CardBody>
                 <Stack mt='6' spacing='3'>
-                    <Heading size='md'>Living room Sofa</Heading>
-                    <Text>
-                        This sofa is perfect for modern tropical spaces, baroque inspired
-                        spaces, earthy toned spaces and for people who love a chic design with a
-                        sprinkle of vintage design.
-                    </Text>
-                    <Text color='blue.600' fontSize='2xl'>
-                        $450
-                    </Text>
-                </Stack>
+                    <Heading size='md'>{titulo}</Heading>
+                </Stack> 
             </CardBody>
             <Divider />
             <CardFooter>
                 <ButtonGroup spacing='2'>
-                    <ItemCount />
+                    <Button>
+                        <Link to={`/producto/${id} `}>
+                            Ver detalle
+                        </Link>
+                    </Button>
                 </ButtonGroup>
-            </CardFooter>
+            </CardFooter> 
         </Card>
     )
 }
 
 export default Item
+
