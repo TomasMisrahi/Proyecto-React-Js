@@ -1,20 +1,29 @@
 import React, { useState } from 'react'
 import { Input, Button, Text } from '@chakra-ui/react'
 import Swal from 'sweetalert2'
+import { collection, addDoc, getFirestore } from 'firebase/firestore'
 
 const Form = () => {
 
     const [nombre, setNombre] = useState("")
     const [email, setEmail] = useState("")
-    const [purchaseId, setPurchaseId] = useState("sdsdasd")
+    const [orderId, setOrderId] = useState("")
+
+    const db = getFirestore()
 
     const handleSubmit = (e) => {
         e.preventDefault()
         Swal.fire(`Muchas gracias ${nombre}, nos contactaremos a ${email} para finalizar el proceso de compra`);
-
-        setEmail("")
-        setNombre("")
+        addDoc(ordersCollection, order).then(({ id }) =>
+            setOrderId(id))
     }
+    const order = {
+        cliente: { nombre, email },
+        // items: cart,
+    }
+
+    const ordersCollection = collection(db, "orden")
+
 
     return (
         <div>
@@ -24,7 +33,7 @@ const Form = () => {
                 <Button type="submit" bg='#3D5FC8' width='150px'>Enviar</Button>
             </form>
             <Text>
-                {`El id de su compra es: ${purchaseId}`}
+                {`El id de su compra es: ${orderId}`}
             </Text>
         </div>
     )

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useCounter = (valorInicial = 0, paso = 1) => {
+const UseCounter = (valorInicial = 0, paso = 1) => {
 
     const [contador, setContador] = useState(valorInicial)
 
@@ -21,6 +21,6 @@ const useCounter = (valorInicial = 0, paso = 1) => {
 }
 
 
-export default useCounter
+export default UseCounter
 
 

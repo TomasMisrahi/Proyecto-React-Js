@@ -1,5 +1,5 @@
 import React from 'react'
-import useCounter from '../hooks/useCounter.jsx'
+import useCounter from '../hooks/UseCounter.jsx'
 
 const CounterComponent = () => {
 
